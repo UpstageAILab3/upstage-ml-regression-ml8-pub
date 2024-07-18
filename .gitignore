@@ -4,3 +4,7 @@ subway_feature.csv
 bus_feature.csv
 sample_submission.csv
 saved_model.pkl
+geocoded_addresses_27.csv
+test_make_lat_lon.csv
+train_make_lat_lon.csv
+train_addstation.csv
