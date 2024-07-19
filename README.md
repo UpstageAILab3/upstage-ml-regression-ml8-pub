@@ -12,7 +12,12 @@
 
 ### Overview
 
-- _Write competition information_
+- 경진대회 주제
+- 경진대회 구현 내용, 컨셉, 교육 내용과의 관련성 등
+- 활용 장비 및 재료(개발 환경, 협업 tool 등)
+- 경진대회 구조 및 사용 데이터셋의 구조도(연관도)
+
+
 
 ### Timeline
 
