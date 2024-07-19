@@ -161,9 +161,11 @@ project-root/
     - 구매연식
 
         !['구매연식'](https://ifh.cc/g/n3PV5n.png)
-    - 거래건수 상위 10개구 및 평균가
+    - 거래건수 상위 10개구
 
         !['거래건수 상위 10개 구'](https://ifh.cc/g/hJhl0n.png)
+    - 거래건수 상위 10개 구 평군 매매가
+      
         !['거래건수 상위 10개 구 평균 가'](https://ifh.cc/g/ZAGZ2x.png)
 [결과 값 내용]
 
