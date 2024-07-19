@@ -48,8 +48,8 @@ output : 9,272개의 input에 대한 예상 아파트 거래금액
 
 ### Timeline
 
-- ex) January 10, 2024 - Start Date
-- ex) February 10, 2024 - Final submission deadline
+- July 9, 2024 - Start Date
+- July 19, 2024 - Final submission deadline
 
 ### Evaluation
 
