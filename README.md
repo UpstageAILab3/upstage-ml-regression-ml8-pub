@@ -147,16 +147,22 @@ project-root/
 - **데이터 로드 및 개요 확인**:
     - 데이터셋의 기본 통계값(평균, 표준편차, 최소/최대값 등)을 확인합니다.
     - 결측치 비율
+      
         !['결측치 비율'](https://ifh.cc/g/TMMtbY.png)
     - 상관계수
+      
         !['상관계수'](https://ifh.cc/g/vc8Rbg.jpg)
     - 전용면적 별 평균 부동산 거래액 비교
+      
         !['전용면적 별 평균 부동산 거래액 비교'](https://ifh.cc/g/kD6pmb.png)
     - 건축연도 분포
+      
         !['건축연도 분포'](https://ifh.cc/g/kpRmVa.png)
     - 구매연식
+
         !['구매연식'](https://ifh.cc/g/n3PV5n.png)
     - 거래건수 상위 10개구 및 평균가
+
         !['거래건수 상위 10개 구'](https://ifh.cc/g/hJhl0n.png)
         !['거래건수 상위 10개 구 평균 가'](https://ifh.cc/g/ZAGZ2x.png)
 [결과 값 내용]
