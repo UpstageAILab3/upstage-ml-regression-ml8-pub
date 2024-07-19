@@ -5,7 +5,7 @@
 
 | ![전승열](https://avatars.githubusercontent.com/u/156163982?v=4) | ![조재현](https://avatars.githubusercontent.com/u/156163982?v=4) | ![최제우](https://avatars.githubusercontent.com/u/156163982?v=4) | ![장재성](https://avatars.githubusercontent.com/u/156163982?v=4) | ![정환희](https://avatars.githubusercontent.com/u/156163982?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
-|            [전승열](https://github.com/UpstageAILab)             |            [조재현](https://github.com/UpstageAILab)             |            [최제우](https://github.com/UpstageAILab)             |            [장재성](https://github.com/UpstageAILab)             |            [정환희](https://github.com/UpstageAILab)             |
+|            [전승열](https://github.com/delightflow)             |            [조재현](https://github.com/jojaen)             |            [최제우](https://github.com/JeWoo-Choi)             |            [장재성](https://github.com/mirrbandi)             |            [정환희](https://github.com/ManfMars)             |
 |                            팀장, 코딩                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |
 
 ## 1. Competiton Info
