@@ -63,13 +63,13 @@ output : 9,272개의 input에 대한 예상 아파트 거래금액
 **개발 환경**:
 
 - 프로그래밍 언어: Python
-- 개발 도구: Jupyter Notebook, PyCharm, Visual Studio Code 등
+- 개발 도구: Jupyter Notebook, Visual Studio Code 등
 - 라이브러리: pandas, numpy, scikit-learn, XGBoost, LightGBM 등
 
 **협업 도구**:
 
 - 버전 관리: Git, GitHub
-- 프로젝트 관리: Trello, Asana
+- 프로젝트 관리: Notion
 - 커뮤니케이션: Slack, Zoom
 
 **데이터셋**: 서울시 아파트 실거래가 데이터
@@ -137,12 +137,122 @@ project-root/
 
 ### Dataset overview
 
-- _Explain using data_
-
+- train data
+RangeIndex: 1118822 entries, 0 to 1118821
+Data columns (total 52 columns):
+  #   Column                  Non-Null Count    Dtype  
+---  ------                  --------------    -----  
+ 0   시군구                     1118822 non-null  object 
+ 1   번지                      1118597 non-null  object 
+ 2   본번                      1118747 non-null  float64
+ 3   부번                      1118747 non-null  float64
+ 4   아파트명                    1116696 non-null  object 
+ 5   전용면적(㎡)                 1118822 non-null  float64
+ 6   계약년월                    1118822 non-null  int64  
+ 7   계약일                     1118822 non-null  int64  
+ 8   층                       1118822 non-null  int64  
+ 9   건축년도                    1118822 non-null  int64  
+ 10  도로명                     1118822 non-null  object 
+ 11  해제사유발생일                 5983 non-null     float64
+ 12  등기신청일자                  1118822 non-null  object 
+ 13  거래유형                    1118822 non-null  object 
+ 14  중개사소재지                  1118822 non-null  object 
+ 15  k-단지분류(아파트,주상복합등등)      248131 non-null   object 
+ 16  k-전화번호                  248548 non-null   object 
+ 17  k-팩스번호                  246080 non-null   object 
+ 18  단지소개기존clob              68582 non-null    float64
+ 19  k-세대타입(분양형태)            249259 non-null   object 
+ 20  k-관리방식                  249259 non-null   object 
+ 21  k-복도유형                  248932 non-null   object 
+ 22  k-난방방식                  249259 non-null   object 
+ 23  k-전체동수                  248192 non-null   float64
+ 24  k-전체세대수                 249259 non-null   float64
+ 25  k-건설사(시공사)              247764 non-null   object 
+ 26  k-시행사                   247568 non-null   object 
+ 27  k-사용검사일-사용승인일           249126 non-null   object 
+ 28  k-연면적                   249259 non-null   float64
+ 29  k-주거전용면적                249214 non-null   float64
+ 30  k-관리비부과면적               249259 non-null   float64
+ 31  k-전용면적별세대현황(60㎡이하)      249214 non-null   float64
+ 32  k-전용면적별세대현황(60㎡~85㎡이하)  249214 non-null   float64
+ 33  k-85㎡~135㎡이하            249214 non-null   float64
+ 34  k-135㎡초과                327 non-null      float64
+ 35  k-홈페이지                  113175 non-null   object 
+ 36  k-등록일자                  10990 non-null    object 
+ 37  k-수정일자                  249214 non-null   object 
+ 38  고용보험관리번호                205518 non-null   object 
+ 39  경비비관리형태                 247834 non-null   object 
+ 40  세대전기계약방법                240075 non-null   object 
+ 41  청소비관리형태                 247644 non-null   object 
+ 42  건축면적                    249108 non-null   float64
+ 43  주차대수                    249108 non-null   float64
+ 44  기타/의무/임대/임의=1/2/3/4     249259 non-null   object 
+ 45  단지승인일                   248536 non-null   object 
+ 46  사용허가여부                  249259 non-null   object 
+ 47  관리비 업로드                 249259 non-null   object 
+ 48  좌표X                     249152 non-null   float64
+ 49  좌표Y                     249152 non-null   float64
+ 50  단지신청일                   249197 non-null   object 
+ 51  target                  1118822 non-null  int64  
+- test data
+RangeIndex: 9272 entries, 0 to 9271
+Data columns (total 51 columns):
+ #   Column                  Non-Null Count  Dtype  
+---  ------                  --------------  -----  
+ 0   시군구                     9272 non-null   object 
+ 1   번지                      9270 non-null   object 
+ 2   본번                      9272 non-null   float64
+ 3   부번                      9272 non-null   float64
+ 4   아파트명                    9262 non-null   object 
+ 5   전용면적(㎡)                 9272 non-null   float64
+ 6   계약년월                    9272 non-null   int64  
+ 7   계약일                     9272 non-null   int64  
+ 8   층                       9272 non-null   int64  
+ 9   건축년도                    9272 non-null   int64  
+ 10  도로명                     9272 non-null   object 
+ 11  해제사유발생일                 212 non-null    float64
+ 12  등기신청일자                  9272 non-null   object 
+ 13  거래유형                    9272 non-null   object 
+ 14  중개사소재지                  9272 non-null   object 
+ 15  k-단지분류(아파트,주상복합등등)      2690 non-null   object 
+ 16  k-전화번호                  2696 non-null   object 
+ 17  k-팩스번호                  2666 non-null   object 
+ 18  단지소개기존clob              554 non-null    float64
+ 19  k-세대타입(분양형태)            2710 non-null   object 
+ 20  k-관리방식                  2710 non-null   object 
+ 21  k-복도유형                  2708 non-null   object 
+ 22  k-난방방식                  2710 non-null   object 
+ 23  k-전체동수                  2695 non-null   float64
+ 24  k-전체세대수                 2710 non-null   float64
+ 25  k-건설사(시공사)              2693 non-null   object 
+ 26  k-시행사                   2692 non-null   object 
+ 27  k-사용검사일-사용승인일           2709 non-null   object 
+ 28  k-연면적                   2710 non-null   float64
+ 29  k-주거전용면적                2710 non-null   float64
+ 30  k-관리비부과면적               2710 non-null   float64
+ 31  k-전용면적별세대현황(60㎡이하)      2710 non-null   float64
+ 32  k-전용면적별세대현황(60㎡~85㎡이하)  2710 non-null   float64
+ 33  k-85㎡~135㎡이하            2710 non-null   float64
+ 34  k-135㎡초과                2 non-null      float64
+ 35  k-홈페이지                  1396 non-null   object 
+ 36  k-등록일자                  718 non-null    object 
+ 37  k-수정일자                  2710 non-null   object 
+ 38  고용보험관리번호                1819 non-null   object 
+ 39  경비비관리형태                 2699 non-null   object 
+ 40  세대전기계약방법                2630 non-null   object 
+ 41  청소비관리형태                 2699 non-null   object 
+ 42  건축면적                    2707 non-null   float64
+ 43  주차대수                    2709 non-null   float64
+ 44  기타/의무/임대/임의=1/2/3/4     2710 non-null   object 
+ 45  단지승인일                   2704 non-null   object 
+ 46  사용허가여부                  2710 non-null   object 
+ 47  관리비 업로드                 2710 non-null   object 
+ 48  좌표X                     2710 non-null   float64
+ 49  좌표Y                     2710 non-null   float64
+ 50  단지신청일                   2710 non-null   object 
+ 
 ### EDA
 탐색적 데이터 분석은 학습 데이터의 특성을 이해하고, 중요한 패턴과 상관관계를 발견하는 데 중점을 둡니다.
-
-
 
 - **데이터 로드 및 개요 확인**:
     - 데이터셋의 기본 통계값(평균, 표준편차, 최소/최대값 등)을 확인합니다.
@@ -176,11 +286,8 @@ project-root/
      !['구별 평균 가격'](https://ifh.cc/g/q76fyg.png)
     - `size`와 `price`의 관계를 산점도로 시각화하여 면적과 가격의 상관관계를 분석합니다.
     !['전용면적 vs 매매가'](https://ifh.cc/g/rsjtGZ.png)
-    - `nearby_amenities`와 `price`의 관계를 시각화하여 주변 시설이 가격에 미치는 영향을 분석합니다.
-    - `transportation` 접근성(예: 지하철역 거리)과 `price`의 관계를 시각화하여 교통 편의성이 가격에 미치는 영향을 분석합니다.
 
-[시각화 내용 기입]
-- _Describe your EDA process and step-by-step conclusion_
+
 
 ### Feature engineering
 
