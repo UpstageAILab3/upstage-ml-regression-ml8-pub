@@ -238,6 +238,7 @@ project-root/
 ### Leader Board
 
 - _Insert Leader Board Capture_
+  ![leaderboard](https://ifh.cc/g/0Jkrr7.jpg)
 - _Write rank and score_
 
 ### Presentation
