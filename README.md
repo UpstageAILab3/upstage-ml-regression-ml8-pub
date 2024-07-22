@@ -143,12 +143,19 @@ Data columns (total 52 columns):
   #   Column                  Non-Null Count    Dtype  
 ---  ------                  --------------    -----  
  0   시군구                     1118822 non-null  object 
+ 
  1   번지                      1118597 non-null  object 
+ 
  2   본번                      1118747 non-null  float64
+ 
  3   부번                      1118747 non-null  float64
+ 
  4   아파트명                    1116696 non-null  object 
+ 
  5   전용면적(㎡)                 1118822 non-null  float64
+ 
  6   계약년월                    1118822 non-null  int64  
+ 
  7   계약일                     1118822 non-null  int64  
  8   층                       1118822 non-null  int64  
  9   건축년도                    1118822 non-null  int64  
