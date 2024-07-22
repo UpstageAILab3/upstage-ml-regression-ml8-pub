@@ -237,8 +237,10 @@ project-root/
 [결과치 및 리더보드 내용 작성 필요]
 ### Leader Board
 
-- _Insert Leader Board Capture_
-  ![leaderboard](https://ifh.cc/g/0Jkrr7.jpg)
+- Leader Board 중간 순위
+  ![leaderboard mid](https://ifh.cc/g/wp16gN.jpg)
+- Leader Board 최종 순위
+  ![leaderboard fin](https://ifh.cc/g/SqTCxL.jpg)
 - _Write rank and score_
 
 ### Presentation
