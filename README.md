@@ -238,9 +238,11 @@ project-root/
 ### Leader Board
 
 - Leader Board 중간 순위
-  ![leaderboard mid](https://ifh.cc/g/wp16gN.jpg)
-- Leader Board 최종 순위
   ![leaderboard fin](https://ifh.cc/g/SqTCxL.jpg)
+- Leader Board 최종 순위
+  ![leaderboard mid](https://ifh.cc/g/wp16gN.jpg)
+
+
 - _Write rank and score_
 
 ### Presentation
