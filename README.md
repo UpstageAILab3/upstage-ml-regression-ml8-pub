@@ -140,123 +140,117 @@ project-root/
 - train data
 RangeIndex: 1118822 entries, 0 to 1118821
 Data columns (total 52 columns):
-  #   Column                  Non-Null Count    Dtype  
----  ------                  --------------    -----  
- 0   시군구                     1118822 non-null  object 
- 
- 1   번지                      1118597 non-null  object 
- 
- 2   본번                      1118747 non-null  float64
- 
- 3   부번                      1118747 non-null  float64
- 
- 4   아파트명                    1116696 non-null  object 
- 
- 5   전용면적(㎡)                 1118822 non-null  float64
- 
- 6   계약년월                    1118822 non-null  int64  
- 
- 7   계약일                     1118822 non-null  int64  
- 8   층                       1118822 non-null  int64  
- 9   건축년도                    1118822 non-null  int64  
- 10  도로명                     1118822 non-null  object 
- 11  해제사유발생일                 5983 non-null     float64
- 12  등기신청일자                  1118822 non-null  object 
- 13  거래유형                    1118822 non-null  object 
- 14  중개사소재지                  1118822 non-null  object 
- 15  k-단지분류(아파트,주상복합등등)      248131 non-null   object 
- 16  k-전화번호                  248548 non-null   object 
- 17  k-팩스번호                  246080 non-null   object 
- 18  단지소개기존clob              68582 non-null    float64
- 19  k-세대타입(분양형태)            249259 non-null   object 
- 20  k-관리방식                  249259 non-null   object 
- 21  k-복도유형                  248932 non-null   object 
- 22  k-난방방식                  249259 non-null   object 
- 23  k-전체동수                  248192 non-null   float64
- 24  k-전체세대수                 249259 non-null   float64
- 25  k-건설사(시공사)              247764 non-null   object 
- 26  k-시행사                   247568 non-null   object 
- 27  k-사용검사일-사용승인일           249126 non-null   object 
- 28  k-연면적                   249259 non-null   float64
- 29  k-주거전용면적                249214 non-null   float64
- 30  k-관리비부과면적               249259 non-null   float64
- 31  k-전용면적별세대현황(60㎡이하)      249214 non-null   float64
- 32  k-전용면적별세대현황(60㎡~85㎡이하)  249214 non-null   float64
- 33  k-85㎡~135㎡이하            249214 non-null   float64
- 34  k-135㎡초과                327 non-null      float64
- 35  k-홈페이지                  113175 non-null   object 
- 36  k-등록일자                  10990 non-null    object 
- 37  k-수정일자                  249214 non-null   object 
- 38  고용보험관리번호                205518 non-null   object 
- 39  경비비관리형태                 247834 non-null   object 
- 40  세대전기계약방법                240075 non-null   object 
- 41  청소비관리형태                 247644 non-null   object 
- 42  건축면적                    249108 non-null   float64
- 43  주차대수                    249108 non-null   float64
- 44  기타/의무/임대/임의=1/2/3/4     249259 non-null   object 
- 45  단지승인일                   248536 non-null   object 
- 46  사용허가여부                  249259 non-null   object 
- 47  관리비 업로드                 249259 non-null   object 
- 48  좌표X                     249152 non-null   float64
- 49  좌표Y                     249152 non-null   float64
- 50  단지신청일                   249197 non-null   object 
- 51  target                  1118822 non-null  int64  
+|   # | Column                        | Non-Null Count | Dtype    |
+|----|------------------------------|----------------|---------|
+| 0  | 시군구                           | 1,118,822       | object  |
+| 1  | 번지                            | 1,118,597       | object  |
+| 2  | 본번                            | 1,118,747       | float64 |
+| 3  | 부번                            | 1,118,747       | float64 |
+| 4  | 아파트명                         | 1,116,696       | object  |
+| 5  | 전용면적(㎡)                      | 1,118,822       | float64 |
+| 6  | 계약년월                         | 1,118,822       | int64   |
+| 7  | 계약일                          | 1,118,822       | int64   |
+| 8  | 층                             | 1,118,822       | int64   |
+| 9  | 건축년도                         | 1,118,822       | int64   |
+| 10 | 도로명                          | 1,118,822       | object  |
+| 11 | 해제사유발생일                     | 5,983           | float64 |
+| 12 | 등기신청일자                      | 1,118,822       | object  |
+| 13 | 거래유형                         | 1,118,822       | object  |
+| 14 | 중개사소재지                      | 1,118,822       | object  |
+| 15 | k-단지분류(아파트,주상복합등등)      | 248,131         | object  |
+| 16 | k-전화번호                       | 248,548         | object  |
+| 17 | k-팩스번호                       | 246,080         | object  |
+| 18 | 단지소개기존clob                  | 68,582          | float64 |
+| 19 | k-세대타입(분양형태)               | 249,259         | object  |
+| 20 | k-관리방식                       | 249,259         | object  |
+| 21 | k-복도유형                       | 248,932         | object  |
+| 22 | k-난방방식                       | 249,259         | object  |
+| 23 | k-전체동수                       | 248,192         | float64 |
+| 24 | k-전체세대수                     | 249,259         | float64 |
+| 25 | k-건설사(시공사)                  | 247,764         | object  |
+| 26 | k-시행사                        | 247,568         | object  |
+| 27 | k-사용검사일-사용승인일              | 249,126         | object  |
+| 28 | k-연면적                        | 249,259         | float64 |
+| 29 | k-주거전용면적                    | 249,214         | float64 |
+| 30 | k-관리비부과면적                   | 249,259         | float64 |
+| 31 | k-전용면적별세대현황(60㎡이하)        | 249,214         | float64 |
+| 32 | k-전용면적별세대현황(60㎡~85㎡이하)   | 249,214         | float64 |
+| 33 | k-85㎡~135㎡이하                 | 249,214         | float64 |
+| 34 | k-135㎡초과                     | 327             | float64 |
+| 35 | k-홈페이지                       | 113,175         | object  |
+| 36 | k-등록일자                       | 10,990          | object  |
+| 37 | k-수정일자                       | 249,214         | object  |
+| 38 | 고용보험관리번호                    | 205,518         | object  |
+| 39 | 경비비관리형태                     | 247,834         | object  |
+| 40 | 세대전기계약방법                    | 240,075         | object  |
+| 41 | 청소비관리형태                     | 247,644         | object  |
+| 42 | 건축면적                         | 249,108         | float64 |
+| 43 | 주차대수                         | 249,108         | float64 |
+| 44 | 기타/의무/임대/임의=1/2/3/4         | 249,259         | object  |
+| 45 | 단지승인일                        | 248,536         | object  |
+| 46 | 사용허가여부                       | 249,259         | object  |
+| 47 | 관리비 업로드                      | 249,259         | object  |
+| 48 | 좌표X                          | 249,152         | float64 |
+| 49 | 좌표Y                          | 249,152         | float64 |
+| 50 | 단지신청일                        | 249,197         | object  |
+| 51 | target                        | 1,118,822       | int64   |
+
 - test data
 RangeIndex: 9272 entries, 0 to 9271
 Data columns (total 51 columns):
- #   Column                  Non-Null Count  Dtype  
----  ------                  --------------  -----  
- 0   시군구                     9272 non-null   object 
- 1   번지                      9270 non-null   object 
- 2   본번                      9272 non-null   float64
- 3   부번                      9272 non-null   float64
- 4   아파트명                    9262 non-null   object 
- 5   전용면적(㎡)                 9272 non-null   float64
- 6   계약년월                    9272 non-null   int64  
- 7   계약일                     9272 non-null   int64  
- 8   층                       9272 non-null   int64  
- 9   건축년도                    9272 non-null   int64  
- 10  도로명                     9272 non-null   object 
- 11  해제사유발생일                 212 non-null    float64
- 12  등기신청일자                  9272 non-null   object 
- 13  거래유형                    9272 non-null   object 
- 14  중개사소재지                  9272 non-null   object 
- 15  k-단지분류(아파트,주상복합등등)      2690 non-null   object 
- 16  k-전화번호                  2696 non-null   object 
- 17  k-팩스번호                  2666 non-null   object 
- 18  단지소개기존clob              554 non-null    float64
- 19  k-세대타입(분양형태)            2710 non-null   object 
- 20  k-관리방식                  2710 non-null   object 
- 21  k-복도유형                  2708 non-null   object 
- 22  k-난방방식                  2710 non-null   object 
- 23  k-전체동수                  2695 non-null   float64
- 24  k-전체세대수                 2710 non-null   float64
- 25  k-건설사(시공사)              2693 non-null   object 
- 26  k-시행사                   2692 non-null   object 
- 27  k-사용검사일-사용승인일           2709 non-null   object 
- 28  k-연면적                   2710 non-null   float64
- 29  k-주거전용면적                2710 non-null   float64
- 30  k-관리비부과면적               2710 non-null   float64
- 31  k-전용면적별세대현황(60㎡이하)      2710 non-null   float64
- 32  k-전용면적별세대현황(60㎡~85㎡이하)  2710 non-null   float64
- 33  k-85㎡~135㎡이하            2710 non-null   float64
- 34  k-135㎡초과                2 non-null      float64
- 35  k-홈페이지                  1396 non-null   object 
- 36  k-등록일자                  718 non-null    object 
- 37  k-수정일자                  2710 non-null   object 
- 38  고용보험관리번호                1819 non-null   object 
- 39  경비비관리형태                 2699 non-null   object 
- 40  세대전기계약방법                2630 non-null   object 
- 41  청소비관리형태                 2699 non-null   object 
- 42  건축면적                    2707 non-null   float64
- 43  주차대수                    2709 non-null   float64
- 44  기타/의무/임대/임의=1/2/3/4     2710 non-null   object 
- 45  단지승인일                   2704 non-null   object 
- 46  사용허가여부                  2710 non-null   object 
- 47  관리비 업로드                 2710 non-null   object 
- 48  좌표X                     2710 non-null   float64
- 49  좌표Y                     2710 non-null   float64
- 50  단지신청일                   2710 non-null   object 
+|   # | Column                        | Non-Null Count | Dtype    |
+|----|------------------------------|----------------|---------|
+| 0  | 시군구                           | 9272           | object  |
+| 1  | 번지                            | 9270           | object  |
+| 2  | 본번                            | 9272           | float64 |
+| 3  | 부번                            | 9272           | float64 |
+| 4  | 아파트명                         | 9262           | object  |
+| 5  | 전용면적(㎡)                      | 9272           | float64 |
+| 6  | 계약년월                         | 9272           | int64   |
+| 7  | 계약일                          | 9272           | int64   |
+| 8  | 층                             | 9272           | int64   |
+| 9  | 건축년도                         | 9272           | int64   |
+| 10 | 도로명                          | 9272           | object  |
+| 11 | 해제사유발생일                     | 212            | float64 |
+| 12 | 등기신청일자                      | 9272           | object  |
+| 13 | 거래유형                         | 9272           | object  |
+| 14 | 중개사소재지                      | 9272           | object  |
+| 15 | k-단지분류(아파트,주상복합등등)      | 2690           | object  |
+| 16 | k-전화번호                       | 2696           | object  |
+| 17 | k-팩스번호                       | 2666           | object  |
+| 18 | 단지소개기존clob                  | 554            | float64 |
+| 19 | k-세대타입(분양형태)               | 2710           | object  |
+| 20 | k-관리방식                       | 2710           | object  |
+| 21 | k-복도유형                       | 2708           | object  |
+| 22 | k-난방방식                       | 2710           | object  |
+| 23 | k-전체동수                       | 2695           | float64 |
+| 24 | k-전체세대수                     | 2710           | float64 |
+| 25 | k-건설사(시공사)                  | 2693           | object  |
+| 26 | k-시행사                        | 2692           | object  |
+| 27 | k-사용검사일-사용승인일              | 2709           | object  |
+| 28 | k-연면적                        | 2710           | float64 |
+| 29 | k-주거전용면적                    | 2710           | float64 |
+| 30 | k-관리비부과면적                   | 2710           | float64 |
+| 31 | k-전용면적별세대현황(60㎡이하)        | 2710           | float64 |
+| 32 | k-전용면적별세대현황(60㎡~85㎡이하)   | 2710           | float64 |
+| 33 | k-85㎡~135㎡이하                 | 2710           | float64 |
+| 34 | k-135㎡초과                     | 2              | float64 |
+| 35 | k-홈페이지                       | 1396           | object  |
+| 36 | k-등록일자                       | 718            | object  |
+| 37 | k-수정일자                       | 2710           | object  |
+| 38 | 고용보험관리번호                    | 1819           | object  |
+| 39 | 경비비관리형태                     | 2699           | object  |
+| 40 | 세대전기계약방법                    | 2630           | object  |
+| 41 | 청소비관리형태                     | 2699           | object  |
+| 42 | 건축면적                         | 2707           | float64 |
+| 43 | 주차대수                         | 2709           | float64 |
+| 44 | 기타/의무/임대/임의=1/2/3/4         | 2710           | object  |
+| 45 | 단지승인일                        | 2704           | object  |
+| 46 | 사용허가여부                       | 2710           | object  |
+| 47 | 관리비 업로드                      | 2710           | object  |
+| 48 | 좌표X                          | 2710           | float64 |
+| 49 | 좌표Y                          | 2710           | float64 |
+| 50 | 단지신청일                        | 2710           | object  |
  
 ### EDA
 탐색적 데이터 분석은 학습 데이터의 특성을 이해하고, 중요한 패턴과 상관관계를 발견하는 데 중점을 둡니다.
